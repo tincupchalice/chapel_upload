@@ -25,43 +25,8 @@ $_date = date_create('', timezone_open('America/Chicago'));
 $vdate = date_format($_date, $config['date_format']);
 $origin = $fpath . $location . $fd . $vdate . "." . $ftype;
 echo $origin . "\n";
-/*
-// find the file based on scheduled events, cmd line args can override the schedule...
-$descs = $config['descriptions'];
-$ets = $config['earliest_times'];
-$lts = $config['latest_times'];
-for ($i = 0; $i < count($descs); ++$i)
-{
-    $desc = $descs[$i];
-    $et= int($ets[$i]);
-    $lt = int($lts[$i]);
-    $elts = explode($fd, $origin);
-    $time = substr($elts[-1], 0, 2);
-    $date = explode($fd, $vdate)[0];
-    $pattern = $date . $fd . $time;
-    $time = int($time);
-    $dir = @opendir($fpath);
-    if ($dir)
-    {
-        if ($time > $et && $time < $lt)
-        {
-            while (($f = readdir($dir)) != FALSE)
-            {
-                if (strstr($f, $pattern) && strstr($f, $ftype))
-                $origin = $f;
-                break;
-    {
-            
-  
-}
-
-
-exit(0);
-*/
-
 
 $description = $location . " Weekly Sermon";
-$showcase_url = "https://api.vimeo.com/users/". $config['client_id'] . "/albums/". $config['showcase'] . "/videos/";
 for ($i = 0; $i < count($argv); ++$i)
 {
     if (!strcmp($argv[$i], "-o"))

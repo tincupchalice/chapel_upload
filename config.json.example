@@ -1,18 +1,12 @@
 {
-	"client_id" : "c0e077c5ae71c5f3d49798589034c56053b3fefe",
-	"client_secret" : "pZz52gRIKMfuchjLvwPRf1AazPr/dgzkH9pFmZVZmQG0gKj/Q/s7ro7agTISW3CWE8keNMWhh+9HWXTysq7PguYZh0nhbzlxxNrcNFqRQQtpA2lZVr5DssMPF/NYWXOH",
-	"access_token" : "df4d747da8adcb5d753b738cee7d9aee",
-    "location": "TCH",
-    "showcase": "7555276",
+	"client_id" : "client_id"
+	"client_secret" : "client_secret"
+	"access_token" : "access_token"
+    "location": "campus",
+    "showcase": "showcase_id",
     "file_path": "./",
-    "descriptions": ["Saturday 7pm Service", 
-                     "Sunday 9am Service", 
-                     "Sunday 11am Service", 
-                     "Women of Hope 9am Service"],
-    "earliest_times": ["19", "09", "11", "11"],
-    "latest_times":["22", "11", "13", "13"],
     "file_delimeter":"_",
     "date_format": "Ymd_His",
     "file_type": "mp4",
-    "autoload_path":"./"
+    "autoload_path":"path_to_autoload.php""
 }
