@@ -1,10 +1,12 @@
 {
-	"client_id" : "client_id"
-	"client_secret" : "client_secret"
-	"access_token" : "access_token"
+    "client_id" : "client_id"
+    "client_secret" : "client_secret"
+    "access_token" : "access_token"
     "location": "campus",
     "showcase": "showcase_id",
-    "file_path": "./",
+    "file_upload_path": "./upload",
+    "file_archive_path":"./archive/",
+    "file_small_path":"./small/",
     "file_delimeter":"_",
     "date_format": "Ymd_His",
     "file_type": "mp4",
