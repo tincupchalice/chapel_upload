@@ -9,7 +9,8 @@ git clone https://github.com/tincupchalice/chapel_upload.git
 git submodule init
 git submodule update
 
-edit config.json.example and change values for that specific location
+cp config.json.example config.json
+# change values for that specific location
 
 # Before using this script, you need to setup the environment with composer...
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -24,4 +25,22 @@ php -r "unlink('composer-setup.php');"
 # see config.json.example
 
 php chapel_upload.php
+
+# EDITING...
+# create a branch from master
+git pull origin master
+git checkout -b "BN_FIX_what_is_broken"
+git checkout -b "BN_FTR_new_feature"
+git add [ files edited or added ]
+# note if config.json is appended, config.json.example must be updated to match"
+git commit -m "Message of what is being committed - wordy is better"
+git push origin BRANCH_NAME
+
+# MERGE Branch to master
+git checkout master
+git merge BRANCH_NAME
+# if errors, fix them then
+git add
+git commit
+git push origin master
 
