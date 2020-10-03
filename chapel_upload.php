@@ -141,6 +141,7 @@ for( $i = 0; $i < count($file_list); $i++)
             $subject = "File too small.  Moving " . $base . " to " . $fs_path;
             $header = "From: ". $sender_name . " <" . $sender_email . ">\r\n"; 
             mail($error_email, $subject, "Recording may have not finished", $header);      
+            echo "Movie file too small, moving " . $origin . " to " . $fs_path . "\n";
         }
         else
         {
