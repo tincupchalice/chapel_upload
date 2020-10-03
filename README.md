@@ -3,8 +3,37 @@
 Examples are given in Linux since no scripting should ever exist on Windows
 please replace the ./ and / to the \\ as necessary. Or use the DIRECTORY_SEPARATOR macro.  PHP scripts may run differently from cmd line than as shown below. -->
 
+<!-- Windows initial setup 
+Download PHP -->
+https://windows.php.net/download#php-7.4
+https://windows.php.net/downloads/releases/php-7.4.11-nts-Win32-vc15-x64.zip
+
+Extract zip file to c:\php by Right click, Extract all...
+Edit Environment Variables for PATH
+c:\php
+
+Open cmd and type 'php -v'
+_PHP 7.4.11 (cli) (built: Sep 29 2020 13:17:42) ( NTS Visual C++ 2017 x64 )
+_Copyright (c) The PHP Group
+-Zend Engine v3.4.0, Copyright (c) Zend Technologies
+
+<!-- Download GIT -->
+https://git-scm.com/download/win
+https://github.com/git-for-windows/git/releases/download/v2.28.0.windows.1/Git-2.28.0-64-bit.exe
+C:\Program Files\Git is the default install directory
+In the setup wizard, click next with defaults EXCEPT the screen 'configuring the line ending conversions', choose the middle option.
+Add these to PATH
+C:\Program Files\Git
+C:\Program Files\Git\bin
+
+Open cmd and type git
+You should see the help print out
+
+in a cmd shell, create a project folder, or if you want to run it in c:\chapel_upload, just got c:\
 <!-- chapel upload repo -->
 git clone https://github.com/tincupchalice/chapel_upload.git
+u:tincupchalice
+p:***************
 <!-- vimeo.php submodule -->
 git submodule init
 git submodule update
