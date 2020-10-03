@@ -16,6 +16,10 @@ Open cmd and type 'php -v'
 _PHP 7.4.11 (cli) (built: Sep 29 2020 13:17:42) ( NTS Visual C++ 2017 x64 )
 _Copyright (c) The PHP Group
 -Zend Engine v3.4.0, Copyright (c) Zend Technologies
+cp c:\php\php.ini.development c:\php.ini
+Edit this file and uncomment 
+ext=openssl
+ext=curl
 
 <!-- Download GIT -->
 https://git-scm.com/download/win
@@ -47,8 +51,9 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === '795f976fe0ebd8b75f26a
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 
-./composer.phar require vimeo/vimeo-api
-./composer.phar update
+php composer.phar require vimeo/vimeo-api
+php composer.phar update
+
 
 -- Create vimeo php script with appropriate config.json
 <!-- see config.json.example -->
