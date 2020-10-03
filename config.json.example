@@ -1,14 +1,18 @@
 {
-    "client_id" : "client_id"
-    "client_secret" : "client_secret"
-    "access_token" : "access_token"
-    "location": "campus",
-    "showcase": "showcase_id",
-    "file_upload_path": "./upload",
+	"client_id" : "vm_client_id",
+	"client_secret" : "vm_client_secret",
+	"access_token" : "vm_access_token",
+    "location": "TC?",
+    "showcase": "numeric_showcase_id",
+    "file_upload_path": "./upload/",
     "file_archive_path":"./archive/",
     "file_small_path":"./small/",
     "file_delimeter":"_",
-    "date_format": "Ymd_His",
     "file_type": "mp4",
-    "autoload_path":"path_to_autoload.php""
+    "autoload_path":"./vendor/",
+    "min_file_size": 100000000,
+    "error_email": "whodat@example.org",
+    "success_email": "whodat@example.org",
+    "sender_name": "My Archiver",
+    "sender_email": "archive_email@example.org"
 }

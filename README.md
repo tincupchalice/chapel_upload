@@ -1,7 +1,15 @@
 # chapel_upload
 
 # Examples are given in Linux since no scripting should ever exist on Windows
-# please replace the ./ and / to the \\ as necessary.  PHP scripts may run differently from cmd line than as shown below.
+# please replace the ./ and / to the \\ as necessary. Or use the DIRECTORY_SEPARATOR macro.  PHP scripts may run differently from cmd line than as shown below.
+
+# chapel upload repo
+git clone https://github.com/tincupchalice/chapel_upload.git
+# vimeo.php submodule
+git submodule init
+git submodule update
+
+edit config.json.example and change values for that specific location
 
 # Before using this script, you need to setup the environment with composer...
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -10,8 +18,10 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 
 ./composer.phar require vimeo/vimeo-api
+./composer.phar update
 
 -- Create vimeo php script with appropriate config.json
 # see config.json.example
 
+php chapel_upload.php
 
